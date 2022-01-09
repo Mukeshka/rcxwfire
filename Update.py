@@ -10,7 +10,7 @@ from sklearn.model_selection import train_test_split
 
 
 d=pd.read_excel("Mann.xlsx")
-#st.write("The shape is ",d.shape)
+st.write("The shape is ",d.shape)
 d1=d[:4571]
 d2=d[4571:9142]
 d3=d[9142:13713]
@@ -19,7 +19,7 @@ d5=d[18284:22855]
 d6=d[22855:27426]
 d7=d[27426:]
 lis=[d1,d2,d3,d4,d5,d6,d7]
-#cl=st.selectbox("Select the number of clusters",[2,3,4,5,6,7,8,9,10])
+cl=st.selectbox("Select the number of clusters",[2,3,4,5,6,7,8,9,10])
 a=st.number_input("Enter the Last Period last digit",value=2,step=1)
 b=st.number_input("Enter the Last Price last digit",value=2,step=1)
 c=st.number_input("Enter the Next Period last digit(You want to predict)",value=2,step=1)
@@ -40,7 +40,7 @@ else:
 					X=i[['A','B','C']]
 					y=i['Y']
 					X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20)
-					#st.write("The shape is ",d.shape)
+					st.write("The shape is ",d.shape)
 					clf.fit(X_train,y_train)
 					p=clf.predict([[a,b,c]])
 					if p==0:
@@ -72,7 +72,7 @@ y=d['Y']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20)
 st.write("The shape is ",d.shape)
 
-#cl=st.selectbox("Select the number of clusters",[2,3,4,5,6,7,8,9,10])
+cl=st.selectbox("Select the number of clusters",[2,3,4,5,6,7,8,9,10])
 a=st.number_input("Enter the Last Period last digit",value=2,step=1)
 b=st.number_input("Enter the Last Price last digit",value=2,step=1)
 c=st.number_input("Enter the Next Period last digit(You want to predict)",value=2,step=1)
@@ -120,7 +120,7 @@ st.subheader("This is under operation")
 						X=i[['A','B','C']]
 						y=i['Y']
 						X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20)
-						#st.write("The shape is ",d.shape)
+						st.write("The shape is ",d.shape)
 						clf.fit(X_train,y_train)
 						p=clf.predict([[a,b,c]])
 						if p==0:
