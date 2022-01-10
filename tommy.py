@@ -116,7 +116,7 @@ elif a_type=="ADABOOST [Recommended]":
 
 			st.write("The shape is ",d.shape)
 			abc = AdaBoostClassifier(n_estimators=100,learning_rate=3,base_estimator=clf)
-			 Train Adaboost Classifer
+			 #Train Adaboost Classifer
 			model = abc.fit(X_train, y_train)
 			Predict the response for test dataset
 			y_pred = model.predict([[a,b,a+1]])
