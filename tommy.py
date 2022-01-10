@@ -14,7 +14,7 @@ from sklearn.linear_model import LogisticRegression
 
 
 a_type=st.selectbox("Type",["LR","DT","ADABOOST [Recommended]","SVM"])
-st.write("The shape is ",d.shape)
+#st.write("The shape is ",d.shape)
 cl=st.selectbox("Select the number of clusters",[2,3,4,5,6,7,8,9,10])
 st.write("This is Version 1")
 g,r=0,0
