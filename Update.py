@@ -117,10 +117,10 @@ st.subheader("This is under operation")
 					lis=[d1,d2,d3,d4,d5,d6,d7]
 					v,o=0,0
 					for i in lis:
-						X=i[['A','B','C']]
-						Y=i['Y']
+						X=d[['A','B','C']]
+						y=d['Y']
 						X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20)
-						#st.write("The shape is ",d.shape)
+						st.write("The shape is ",d.shape)
 						clf.fit(X_train,y_train)
 						p=clf.predict([[a,b,c]])
 						if p==0:
