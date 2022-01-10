@@ -118,7 +118,7 @@ elif a_type=="ADABOOST [Recommended]":
 			abc = AdaBoostClassifier(n_estimators=100,learning_rate=3,base_estimator=clf)
 			 #Train Adaboost Classifer
 			model = abc.fit(X_train, y_train)
-			Predict the response for test dataset
+			#Predict the response for test dataset
 			y_pred = model.predict([[a,b,a+1]])
 			p=y_pred[0]
 
