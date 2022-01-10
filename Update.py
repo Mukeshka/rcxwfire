@@ -118,7 +118,7 @@ st.subheader("This is under operation")
 					v,o=0,0
 					for i in lis:
 						X=i[['A','B','C']]
-						y=i['Y']
+						Y=i['Y']
 						X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20)
 						#st.write("The shape is ",d.shape)
 						clf.fit(X_train,y_train)
